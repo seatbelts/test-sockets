@@ -10,8 +10,6 @@ if __name__ == '__main__':
     s.listen(1)
     c, addr = s.accept()
     
-    inet = inet()
-    
     print "Conexion desde (ip, puerto): " + str(addr)
     while True:
         data = c.recv(1024)
